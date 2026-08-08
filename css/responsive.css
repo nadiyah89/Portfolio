@@ -1,0 +1,439 @@
+/* =========================================
+   TABLET / SMALL DESKTOP
+========================================= */
+
+@media (max-width: 1100px) {
+
+    /* NAVBAR */
+
+    .nav-menu {
+        gap: 18px;
+    }
+
+    .nav-link {
+        font-size: .9rem;
+    }
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .btn-resume {
+        padding: 10px 15px;
+        font-size: .88rem;
+    }
+
+
+    /* HERO */
+
+    .hero-content {
+        gap: 40px;
+    }
+
+    .hero-title {
+        font-size: clamp(3rem, 7vw, 4.5rem);
+    }
+
+    .hero-subtitle {
+        font-size: 1.8rem;
+    }
+
+    .code-body {
+        padding: 24px;
+    }
+
+    .code-body code {
+        font-size: .85rem;
+    }
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 992px) {
+
+    /* ABOUT */
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    /* CONTACT */
+
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+
+    /* SKILLS */
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* PROJECTS */
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* HERO */
+
+    .hero-content {
+        gap: 35px;
+    }
+
+}
+
+
+/* =========================================
+   TABLET NAVBAR
+========================================= */
+
+@media (max-width: 1050px) {
+
+    .header {
+        top: 10px;
+    }
+
+    .navbar {
+        height: 60px;
+        padding: 0 18px;
+    }
+
+    .logo {
+        font-size: 1.35rem;
+    }
+
+    /* HAMBURGER */
+
+    .menu-toggle {
+        display: flex;
+        z-index: 1001;
+    }
+
+    /* MOBILE MENU */
+
+    .nav-menu {
+
+        position: fixed;
+
+        top: 80px;
+        left: 50%;
+
+        width: min(90%, 420px);
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 22px;
+
+        padding: 28px;
+
+        background: rgba(11, 17, 32, .96);
+
+        backdrop-filter: blur(25px);
+        -webkit-backdrop-filter: blur(25px);
+
+        border: 1px solid rgba(255,255,255,.08);
+
+        border-radius: 20px;
+
+        transform: translateX(-50%) translateY(-20px);
+
+        opacity: 0;
+        visibility: hidden;
+
+        transition:
+            opacity .3s ease,
+            transform .3s ease,
+            visibility .3s ease;
+    }
+
+    .nav-menu.active {
+
+        opacity: 1;
+
+        visibility: visible;
+
+        transform: translateX(-50%) translateY(0);
+
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+
+    .btn-resume {
+        display: none;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE HERO
+========================================= */
+
+@media (max-width: 768px) {
+
+    .hero {
+
+        min-height: auto;
+        width: 100%;
+        padding: 130px 0 70px;
+
+    }
+
+    .hero-content {
+        width: 100%;
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-title {
+
+        font-size: clamp(2.8rem, 14vw, 4rem);
+
+        line-height: 1.05;
+
+    }
+
+    .hero-subtitle {
+
+        font-size: 1.7rem;
+
+        line-height: 1.4;
+
+    }
+
+    .hero-description {
+
+        font-size: 1rem;
+
+        line-height: 1.8;
+
+        margin-bottom: 30px;
+
+    }
+
+    .hero-buttons {
+
+        gap: 14px;
+
+        flex-wrap: wrap;
+
+    }
+
+    /* Hide desktop code window */
+
+    .hero-code {
+        display: none;
+    }
+
+
+    /* ===============================
+       ABOUT
+    =============================== */
+
+    .about {
+        padding: 90px 0;
+    }
+
+    .about-card {
+        padding: 30px;
+    }
+
+    .about-card p {
+
+        font-size: 1rem;
+
+        text-align: left;
+
+        line-height: 1.9;
+
+    }
+
+    .about-tags {
+        justify-content: flex-start;
+    }
+
+    .education-card {
+        padding: 24px;
+    }
+
+
+    /* ===============================
+       SKILLS
+    =============================== */
+
+    .skill-card {
+        padding: 28px;
+    }
+
+    .skill-tags {
+        gap: 10px;
+    }
+
+    .skill-tags span {
+
+        font-size: .9rem;
+
+        padding: 10px 14px;
+
+    }
+
+
+    /* ===============================
+       PROJECTS
+    =============================== */
+
+    .project-content {
+        padding: 22px;
+    }
+
+    .project-header h3 {
+        font-size: 1.35rem;
+    }
+
+    .project-links {
+
+        flex-direction: column;
+
+        gap: 12px;
+
+    }
+
+
+    /* ===============================
+       EXPERIENCE
+    =============================== */
+
+    .timeline::before {
+        left: 14px;
+    }
+
+    .timeline-item {
+        padding-left: 50px;
+    }
+
+    .timeline-dot {
+        left: 4px;
+    }
+
+    .timeline-content {
+        padding: 24px;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.25rem;
+    }
+
+}
+
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media (max-width: 480px) {
+
+    .container {
+        width: 90%;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        padding-top: 115px;
+    }
+
+    .hero-tag {
+
+        padding: 8px 15px;
+
+        font-size: .9rem;
+
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.55rem;
+    }
+
+    .hero-description {
+        font-size: .95rem;
+    }
+
+    .hero-buttons {
+        width: 100%;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+
+        padding: 13px 20px;
+
+    }
+
+    .hero-social a {
+
+        width: 44px;
+
+        height: 44px;
+
+    }
+
+
+    /* ABOUT */
+
+    .about-card {
+        padding: 24px;
+    }
+
+    .about-card h3 {
+        font-size: 1.5rem;
+    }
+
+
+    /* SECTION TITLES */
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    /* CONTACT */
+
+    .contact-info,
+    .contact-form {
+        padding: 24px;
+    }
+    
+    /* PROJECTS */
+
+    .project-content {
+        padding: 20px;
+    }
+
+
+    /* EXPERIENCE */
+
+    .timeline-content {
+        padding: 20px;
+    }
+
+}

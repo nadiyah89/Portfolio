@@ -1,0 +1,148 @@
+/* NAVBAR */
+
+.header {
+    position: fixed;
+    top: 20px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: 
+    background .35s ease,
+    transform .35s ease,
+    box-shadow .35s ease;
+}
+
+.navbar {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 26px;
+    background: rgba(11, 17, 32, 0.65);
+    backdrop-filter: blur(28px);
+    -webkit-backdrop-filter: blur(28px);
+    border: 1px solid rgba(255,255,255,.06);
+    border-radius: 18px;
+    box-shadow: 0 10px 40px rgba(0,0,0,.35);
+}
+
+/* LOGO */
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: 1px;
+    transition: var(--transition);
+}
+
+.logo:hover {
+    color: var(--primary);
+    transform:translateX(2px);
+
+}
+
+/* NAVIGATION */
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    list-style: none;
+
+}
+
+.nav-link {
+    position: relative;
+    color: var(--text-light);
+    font-size: .97rem;
+    font-weight: 500;
+    transition: var(--transition);
+
+}
+
+.nav-link:hover {
+    color: var(--text);
+
+}
+
+/* Underline */
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 2px;
+    border-radius: 20px;
+    background: linear-gradient(
+        to right,
+        var(--primary),
+        var(--secondary)
+    );
+    transition: .35s;
+
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+
+    width: 100%;
+
+}
+
+/* RESUME BUTTON */
+
+.btn-resume {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 20px;
+    color: white;
+    background: linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+    border-radius: 14px;
+    font-weight: 600;
+    transition: .35s;
+    font-size: .95rem;
+
+}
+
+.btn-resume:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(59,130,246,.35);
+
+}
+
+.btn-resume i{
+    transition:.35s;
+
+}
+
+.btn-resume:hover i{
+    transform:translateY(2px);
+
+}
+
+/* HAMBURGER*/
+
+.menu-toggle{
+    display:none;
+    flex-direction:column;
+    gap:6px;
+    cursor:pointer;
+
+}
+
+.menu-toggle span{
+    width:28px;
+    height:3px;
+    border-radius:20px;
+    background:white;
+    transition:.35s;
+
+}
