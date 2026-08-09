@@ -29,13 +29,6 @@ Open the project in VS Code and run `index.html` using Live Server.
 
 This portfolio is deployed using **GitHub Pages**.
 
-## 📬 Contact
-
-* GitHub: https://github.com/nadiyah89
-* LinkedIn: https://linkedin.com/in/nadiakhanb327
-* Email: knadiya185@gmail.com
-
-
 
 © 2026 Nadia Khan
 
